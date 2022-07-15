@@ -49,12 +49,18 @@ Please take some time to answer the following questions. Your answers should go 
 
 - Given more time, what would you suggest for improving the performance of this app?
 
-  `Answer:`
+    - `Answer:` 
+        - I'd probably want to just ship it out and get some real world data to see where things are showing strain. I don't imagine this app would have too many performance issues given the dataset but I'd try to follow the data where it takes us. 
+    
+        - One thing I do usually like to do on search inputs like that is debounce the submission  so it's not firing on each keystroke. Would be good to look into cacheing and pre-fetching too. 
 
 - Is there anything you would consider doing if we were to go live with this app?
 
-  `Answer:`
+    - `Answer:` 
+        - Obviously there's a ton that could be done in terms of styling and making things look good. I'd also like to spend some time organizing the code and building out some UI components. Different views, routing, you name it.
 
 - What was the most challenging aspect of this work for you (if at all)?
-
-  `Answer: The first thing to understand about recursion is you must understand recursion... lol. I always have to do some googling when it comes to those problems.`
+  
+  - `Answer:` Two things.  
+    1. Recursion problems always prompt some googling...
+    2. Walking the line between doing some extra and following instructions to the letter. My instinct is to clean up the code and tweak on the UI till things look good, but there were some specific instructions about matching the comps. So I tried to match things as much as I could and held off on bringing in sass to organize the css. Would have helped a bit but it would have also added a dependency. I did end up re-organizing the main component and renamed a few vars to make things read a better. I also ended up breaking the details into it's own component even though instructions said work in the `App.js` and `index.css` files. Hope that's cool!
